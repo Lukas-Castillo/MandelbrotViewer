@@ -9,7 +9,7 @@ int main() {
 
 void computeOrbit(const char* cxS, const char* cyS, int maxIter, int prec, double* out, int* len){
     mpfr_set_default_prec(prec);
-    mpfr_t zx, zy, sqx, sqy, cx, cy, mag, ;
+    mpfr_t zx, zy, sqx, sqy, cx, cy, mag;
     mpfr_inits(zx, zy, sqx, sqy, cx, cy, mag, NULL);
     mpfr_set_str(cx, cxS, 10, MPFR_RNDN);
     mpfr_set_str(cy, cyS, 10, MPFR_RNDN);
